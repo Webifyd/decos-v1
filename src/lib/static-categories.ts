@@ -11,31 +11,31 @@ export const categoryMetadata: Record<string, CategoryMetadata> = {
     id: 'ppr-fittings',
     name: 'PPR Fittings',
     slug: 'ppr-fittings',
-    image: '/images/categories/ppr-fittings.jpg', // Image path to be provided
+    image: 'https://altawsa-trimg.netlify.app/catagory-images/ppr-fittings-1.webp'
   },
   'ppr-pipes': {
     id: 'ppr-pipes',
     name: 'PPR Pipes',
     slug: 'ppr-pipes',
-    image: '/images/categories/ppr-pipes.jpg', // Image path to be provided
+    image: 'https://altawsa-trimg.netlify.app/ppr-products/ppr_pipes.webp'
   },
   'upvc-pipes': {
     id: 'upvc-pipes',
     name: 'UPVC Pipes',
     slug: 'upvc-pipes',
-    image: '/images/categories/upvc-pipes.jpg', // Image path to be provided
+    image: 'https://altawsa-trimg.netlify.app/Catagory-images-sqr/under-ground-drainage-and-sewage-pipes-upvc.webp',
   },
   'upvc-fittings': {
     id: 'upvc-fittings',
     name: 'UPVC Fittings',
     slug: 'upvc-fittings',
-    image: '/images/categories/upvc-fittings.jpg', // Image path to be provided
+    image: 'https://altawsa-trimg.netlify.app/Catagory-images-sqr/UPVC-fittings.webp',
   },
   'upvc-pressure-pipes': {
     id: 'upvc-pressure-pipes',
     name: 'UPVC Pressure Pipes',
     slug: 'upvc-pressure-pipes',
-    image: '/images/categories/upvc-pressure-pipes.jpg', // Image path to be provided
+    image: 'https://altawsa-trimg.netlify.app/Catagory-images-sqr/UPVC-pressure-pipes.webp',
   },
 };
 
@@ -46,7 +46,7 @@ export function getCategoryName(id: string): string {
 
 // Helper function to get category image
 export function getCategoryImage(id: string): string {
-  return categoryMetadata[id]?.image || '/images/categories/placeholder.jpg';
+  return categoryMetadata[id]?.image || 'https://altawsa-trimg.netlify.app/Catagory-images-sqr/UPVC-pressure-pipes.webp';
 }
 
 // Get all category IDs
