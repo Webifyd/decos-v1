@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 import { Card, CardBody } from '@/components/ui/Card';
 import type { Metadata } from 'next';
