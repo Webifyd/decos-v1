@@ -2,6 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 import { Card, CardBody } from '@/components/ui/Card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About Us - Decos PVC Solutions',
+  description: 'For over two decades, Decos has been at the forefront of PVC piping innovation, delivering reliable solutions that connect communities and industries worldwide.',
+};
 
 export default function AboutPage() {
   return (
@@ -71,7 +77,7 @@ export default function AboutPage() {
             {[
               { label: 'Years Experience', value: '25+' },
               { label: 'Countries Served', value: '50+' },
-              { label: 'Products', value: '500+' },
+              { label: 'Product Categories', value: '5' },
               { label: 'Team Members', value: '200+' },
             ].map((stat, idx) => (
               <div key={idx}>
