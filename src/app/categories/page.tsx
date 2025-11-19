@@ -1,15 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 import { Card, CardBody } from '@/components/ui/Card';
 import { CheckCircle } from 'lucide-react';
 import categoriesData from '@/data/categories.json';
+import { categoryMetadata } from '@/lib/static-categories';
 
 export default function CategoriesPage() {
-  // Transform categories.json object into array
+  // Transform categories.json object into array with metadata
   const categories = Object.entries(categoriesData).map(([id, data]: [string, any]) => ({
     id,
-    name: id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    name: categoryMetadata[id]?.name || id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '),
+    image: categoryMetadata[id]?.image || '/images/categories/placeholder.jpg',
     description: data.enhancedDescription,
     featureCount: data.keyFeatures?.length || 0,
     applicationTypes: Object.keys(data.applications || {}).length,
@@ -41,7 +44,18 @@ export default function CategoriesPage() {
                 href={`/categories/${category.id}`}
                 className="group"
               >
-                <Card hover className="h-full border-t-4 border-t-decos-gold transition-all duration-300 group-hover:shadow-xl">
+                <Card hover className="h-full border-t-4 border-t-decos-gold transition-all duration-300 group-hover:shadow-xl overflow-hidden">
+                  {/* Category Image */}
+                  <div className="relative h-48 bg-gradient-to-br from-decos-gold/10 to-technical-blue/10">
+                    <Image
+                      src={category.image}
+                      alt={category.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                  </div>
+
                   <CardBody className="p-6 flex flex-col h-full">
                     {/* Category Name */}
                     <h2 className="text-2xl font-bold text-neutral-charcoal mb-4 group-hover:text-decos-gold transition-colors">

@@ -1,10 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { Card, CardBody, CardFooter, CardHeader } from '@/components/ui/Card';
 import { CheckCircle } from 'lucide-react';
 import categoriesData from '@/data/categories.json';
+import { categoryMetadata } from '@/lib/static-categories';
 
 export default function Home() {
   return (
@@ -109,19 +111,22 @@ export default function Home() {
 
               return featuredIds.map((id) => {
                 const category = data[id];
-                const name = id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                const metadata = categoryMetadata[id];
+                const name = metadata?.name || id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+                const image = metadata?.image || '/images/categories/placeholder.jpg';
 
                 return (
                   <Link key={id} href={`/categories/${id}`} className="group">
                     <Card hover className="overflow-hidden h-full">
-                      {/* Image Placeholder */}
+                      {/* Category Image */}
                       <div className="h-48 bg-gradient-to-br from-decos-gold/10 to-technical-blue/10 relative">
-                        <div className="absolute inset-0 flex items-center justify-center">
-                          <div className="text-center">
-                            <div className="text-6xl font-bold text-neutral-charcoal/20">{name[0]}</div>
-                            <p className="text-xs text-neutral-steel mt-2">Image Coming Soon</p>
-                          </div>
-                        </div>
+                        <Image
+                          src={image}
+                          alt={name}
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        />
                       </div>
 
                       <CardHeader>
