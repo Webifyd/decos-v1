@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { Card, CardBody, CardFooter, CardHeader } from '@/components/ui/Card';
+import { CheckCircle } from 'lucide-react';
+import categoriesData from '@/data/categories.json';
 
 export default function Home() {
   return (
@@ -25,9 +27,9 @@ export default function Home() {
               Decos delivers innovative PVC pipe solutions that connect communities and build sustainable infrastructure with industrial precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/products">
+              <Link href="/categories">
                 <Button size="lg" className="w-full sm:w-auto">
-                  Explore Products
+                  Explore Categories
                 </Button>
               </Link>
               <Link href="/contact">
@@ -85,62 +87,86 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Product Categories */}
+      {/* Featured Categories */}
       <section className="py-20 bg-white">
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div className="max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Product Range</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Categories</h2>
               <p className="text-lg text-neutral-steel">
-                Comprehensive piping solutions for every application, from residential plumbing to industrial infrastructure.
+                Comprehensive PPR and UPVC piping solutions for every application, from residential plumbing to industrial infrastructure.
               </p>
             </div>
-            <Link href="/products" className="hidden md:block">
-              <Button variant="ghost" rightIcon={<span>→</span>}>View All Products</Button>
+            <Link href="/categories" className="hidden md:block">
+              <Button variant="ghost" rightIcon={<span>→</span>}>View All Categories</Button>
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: 'Pressure Pipes',
-                image: '/assets/pressure-pipes.jpg', // Placeholder path
-                desc: 'High-performance pipes for water supply and distribution networks.',
-              },
-              {
-                title: 'Drainage Systems',
-                image: '/assets/drainage.jpg', // Placeholder path
-                desc: 'Efficient waste water management solutions for modern buildings.',
-              },
-              {
-                title: 'Electrical Conduits',
-                image: '/assets/conduit.jpg', // Placeholder path
-                desc: 'Safe and durable protection for electrical wiring and cables.',
-              },
-            ].map((category, index) => (
-              <Card key={index} hover className="overflow-hidden group cursor-pointer">
-                <div className="h-48 bg-neutral-soft relative">
-                  {/* Placeholder for image */}
-                  <div className="absolute inset-0 flex items-center justify-center text-neutral-light text-4xl font-bold bg-neutral-100">
-                    {category.title[0]}
-                  </div>
-                </div>
-                <CardHeader>
-                  <h3 className="text-xl font-bold group-hover:text-technical-blue transition-colors">{category.title}</h3>
-                </CardHeader>
-                <CardBody className="pt-0">
-                  <p className="text-neutral-steel mb-4">{category.desc}</p>
-                </CardBody>
-                <CardFooter className="bg-transparent border-t-0 pt-0 pb-6">
-                  <span className="text-decos-gold font-semibold text-sm group-hover:underline">Learn more →</span>
-                </CardFooter>
-              </Card>
-            ))}
+            {(() => {
+              // Feature 3 specific categories: PPR Pipes, UPVC Pipes, UPVC Pressure Pipes
+              const featuredIds = ['ppr-pipes', 'upvc-pipes', 'upvc-pressure-pipes'];
+              const data = categoriesData as Record<string, any>;
+
+              return featuredIds.map((id) => {
+                const category = data[id];
+                const name = id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+                return (
+                  <Link key={id} href={`/categories/${id}`} className="group">
+                    <Card hover className="overflow-hidden h-full">
+                      {/* Image Placeholder */}
+                      <div className="h-48 bg-gradient-to-br from-decos-gold/10 to-technical-blue/10 relative">
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className="text-center">
+                            <div className="text-6xl font-bold text-neutral-charcoal/20">{name[0]}</div>
+                            <p className="text-xs text-neutral-steel mt-2">Image Coming Soon</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <CardHeader>
+                        <h3 className="text-xl font-bold group-hover:text-decos-gold transition-colors">
+                          {name}
+                        </h3>
+                      </CardHeader>
+
+                      <CardBody className="pt-0 flex-grow">
+                        <p className="text-neutral-steel mb-4 line-clamp-3">
+                          {category.enhancedDescription}
+                        </p>
+
+                        {/* Key Stats */}
+                        <div className="space-y-2">
+                          <div className="flex items-center text-sm text-neutral-steel">
+                            <CheckCircle className="h-4 w-4 text-solution-green mr-2 flex-shrink-0" />
+                            <span>{category.keyFeatures?.length || 0} key features</span>
+                          </div>
+                          <div className="flex items-center text-sm text-neutral-steel">
+                            <CheckCircle className="h-4 w-4 text-technical-blue mr-2 flex-shrink-0" />
+                            <span>{Object.keys(category.applications || {}).length} application types</span>
+                          </div>
+                        </div>
+                      </CardBody>
+
+                      <CardFooter className="bg-transparent border-t-0 pt-0 pb-6">
+                        <span className="text-decos-gold font-semibold text-sm group-hover:underline inline-flex items-center">
+                          View Details
+                          <svg className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </span>
+                      </CardFooter>
+                    </Card>
+                  </Link>
+                );
+              });
+            })()}
           </div>
 
           <div className="mt-8 text-center md:hidden">
-            <Link href="/products">
-              <Button variant="outline" className="w-full">View All Products</Button>
+            <Link href="/categories">
+              <Button variant="outline" className="w-full">View All Categories</Button>
             </Link>
           </div>
         </Container>
