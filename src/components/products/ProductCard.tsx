@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Star, ShoppingCart, Eye } from 'lucide-react';
 import { Product } from '../../types';
 import { Button } from '../ui/Button';
@@ -86,13 +86,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, className = '
 
         {/* Actions */}
         <div className="flex space-x-2">
-          <Link to={`/products/${product.id}`} className="flex-1">
+          <Link href={`/products/${product.id}`} className="flex-1">
             <Button variant="outline" className="w-full text-sm" size="sm">
               <Eye className="h-4 w-4 mr-1" />
               View Details
             </Button>
           </Link>
-          <Link to={`/quote?product=${product.id}`}>
+          <Link href={`/quote?product=${product.id}`}>
             <Button variant="primary" size="sm">
               <ShoppingCart className="h-4 w-4" />
             </Button>

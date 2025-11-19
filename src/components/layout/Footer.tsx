@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
@@ -46,12 +46,12 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-decos-gold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-decos-gray hover:text-decos-gold transition-colors">Home</Link></li>
-              <li><Link to="/products" className="text-decos-gray hover:text-decos-gold transition-colors">Products</Link></li>
-              <li><Link to="/categories" className="text-decos-gray hover:text-decos-gold transition-colors">Categories</Link></li>
-              <li><Link to="/about" className="text-decos-gray hover:text-decos-gold transition-colors">About Us</Link></li>
-              <li><Link to="/contact" className="text-decos-gray hover:text-decos-gold transition-colors">Contact</Link></li>
-              <li><Link to="/quote" className="text-decos-gray hover:text-decos-gold transition-colors">Get Quote</Link></li>
+              <li><Link href="/" className="text-decos-gray hover:text-decos-gold transition-colors">Home</Link></li>
+              <li><Link href="/products" className="text-decos-gray hover:text-decos-gold transition-colors">Products</Link></li>
+              <li><Link href="/categories" className="text-decos-gray hover:text-decos-gold transition-colors">Categories</Link></li>
+              <li><Link href="/about" className="text-decos-gray hover:text-decos-gold transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="text-decos-gray hover:text-decos-gold transition-colors">Contact</Link></li>
+              <li><Link href="/quote" className="text-decos-gray hover:text-decos-gold transition-colors">Get Quote</Link></li>
             </ul>
           </div>
 
@@ -59,11 +59,11 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-semibold text-decos-gold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><Link to="/products?category=pipes" className="text-decos-gray hover:text-decos-gold transition-colors">PVC Pipes</Link></li>
-              <li><Link to="/products?category=fittings" className="text-decos-gray hover:text-decos-gold transition-colors">Pipe Fittings</Link></li>
-              <li><Link to="/products?category=valves" className="text-decos-gray hover:text-decos-gold transition-colors">Valves</Link></li>
-              <li><Link to="/products?category=accessories" className="text-decos-gray hover:text-decos-gold transition-colors">Accessories</Link></li>
-              <li><Link to="/products?category=tools" className="text-decos-gray hover:text-decos-gold transition-colors">Tools</Link></li>
+              <li><Link href="/products?category=ppr-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">PPR Pipes</Link></li>
+              <li><Link href="/products?category=ppr-fittings" className="text-decos-gray hover:text-decos-gold transition-colors">PPR Fittings</Link></li>
+              <li><Link href="/products?category=upvc-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Pipes</Link></li>
+              <li><Link href="/products?category=upvc-fittings" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Fittings</Link></li>
+              <li><Link href="/products?category=upvc-pressure-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Pressure Pipes</Link></li>
             </ul>
           </div>
 
@@ -100,13 +100,13 @@ export const Footer: React.FC = () => {
               © {currentYear} Decos PVC Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
+              <Link href="/privacy" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
+              <Link href="/terms" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
                 Terms of Service
               </Link>
-              <Link to="/sitemap" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
+              <Link href="/sitemap" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
                 Sitemap
               </Link>
             </div>

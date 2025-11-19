@@ -1,0 +1,497 @@
+{
+    "ppr-fittings": {
+      "enhancedDescription": "Professional-grade PPR (Polypropylene Random Copolymer) fittings engineered for superior performance in hot and cold water distribution systems. Our comprehensive range ensures leak-free, durable connections for residential, commercial, and industrial applications.",
+      "technicalSpecs": {
+        "material": "PPR (Polypropylene Random Copolymer)",
+        "temperatureRange": "-20°C to +95°C (short term +110°C)",
+        "pressureRating": "PN 10, PN 16, PN 20, PN 25",
+        "sizeRange": "16mm to 110mm",
+        "connectionMethod": "Heat fusion welding",
+        "jointType": "Socket fusion, butt fusion",
+        "wallThickness": "According to ISO 15874 SDR series",
+        "standards": ["ISO 15874", "DIN 8077/8078", "ASTM F2389", "EN 15874"],
+        "certifications": ["NSF 61", "CE Marking", "WRAS Approved", "DVGW"]
+      },
+      "keyFeatures": [
+        "100% leak-proof heat fusion joints",
+        "Excellent chemical resistance to acids and alkalis",
+        "Non-toxic and hygienic for potable water",
+        "Long service life (50+ years)",
+        "Smooth inner surface reduces pressure loss by 30%",
+        "Lightweight yet robust construction",
+        "Corrosion and scale resistant",
+        "Recyclable and environmentally friendly",
+        "Low thermal conductivity for energy efficiency",
+        "Resistant to UV degradation when stabilized"
+      ],
+      "applications": {
+        "residential": [
+          "Hot and cold water supply systems",
+          "Underfloor heating systems",
+          "Radiator connections and HVAC",
+          "Bathroom and kitchen plumbing",
+          "Solar water heating systems",
+          "Garden irrigation systems"
+        ],
+        "commercial": [
+          "Office building water distribution",
+          "Hotel and restaurant plumbing",
+          "Swimming pool installations",
+          "HVAC and chilled water systems",
+          "Healthcare facility plumbing",
+          "Educational institution water systems"
+        ],
+        "industrial": [
+          "Process water systems",
+          "Chemical handling (compatible chemicals)",
+          "Compressed air distribution",
+          "Industrial cooling systems",
+          "Food and beverage processing",
+          "Pharmaceutical clean utilities"
+        ]
+      },
+      "industries": [
+        "Construction & Building",
+        "Hospitality & Tourism",
+        "Healthcare Facilities",
+        "Educational Institutions",
+        "Manufacturing",
+        "Oil & Gas (utility applications)",
+        "Food & Beverage",
+        "Pharmaceutical"
+      ],
+      "installationBenefits": [
+        "Faster installation compared to metal pipes (60% time reduction)",
+        "No threading or special tools required beyond fusion equipment",
+        "Reduced labor costs and installation time",
+        "Minimal maintenance requirements throughout lifespan",
+        "No galvanic corrosion or electrolytic degradation",
+        "Excellent thermal insulation properties",
+        "Joint integrity stronger than pipe body",
+        "No gaskets or sealing compounds required"
+      ],
+      "qualityAssurance": {
+        "testing": "Every batch tested for pressure, temperature, and chemical resistance according to ISO standards",
+        "warranty": "25-year manufacturer warranty with proper installation",
+        "compliance": "Meets international quality standards and local building codes",
+        "traceability": "Full batch traceability with QR code marking",
+        "qualityControl": "In-line quality monitoring during production"
+      },
+      "availableFittings": [
+        "Elbows (90°, 45°, 22.5°)",
+        "Tees and reducing tees",
+        "Reducers and adapters", 
+        "End caps and plugs",
+        "Ball valves and shut-off valves",
+        "Unions and couplers",
+        "Flanges and transitions",
+        "Manifolds and distribution blocks",
+        "Cross fittings",
+        "Stub ends and backing rings"
+      ],
+      "environmentalBenefits": [
+        "100% recyclable material",
+        "Low carbon footprint manufacturing",
+        "Energy efficient due to thermal properties",
+        "No heavy metals or toxic additives",
+        "Reduces water waste through leak-free joints"
+      ]
+    },
+  
+    "ppr-pipes": {
+      "enhancedDescription": "High-performance PPR pipes designed for reliable hot and cold water distribution with exceptional thermal stability and longevity. Engineered for optimal flow characteristics, superior pressure resistance, and minimal maintenance requirements in demanding applications.",
+      "technicalSpecs": {
+        "material": "PPR (Polypropylene Random Copolymer)",
+        "temperatureRange": "-20°C to +95°C (short term +110°C)",
+        "pressureRating": "PN 10, PN 16, PN 20, PN 25",
+        "sizeRange": "16mm to 160mm",
+        "length": "4m standard lengths (6m available on request)",
+        "wallThickness": "SDR 11, SDR 7.4, SDR 6, SDR 5 (according to pressure rating)",
+        "connectionMethod": "Socket fusion, butt fusion",
+        "standards": ["ISO 15874", "DIN 8077/8078", "EN 15874", "ASTM F2389"],
+        "certifications": ["NSF 61", "CE Marking", "WRAS Approved", "DVGW"]
+      },
+      "keyFeatures": [
+        "Superior thermal stability and expansion resistance",
+        "Excellent flow characteristics with minimal pressure drop",
+        "Chemical and corrosion resistance to wide pH range",
+        "Low thermal conductivity for energy conservation",
+        "Smooth internal surface prevents biofilm formation",
+        "UV stabilized formulation for outdoor applications",
+        "Dimensional stability under thermal cycling",
+        "Easy heat fusion joining for permanent connections",
+        "Freeze-thaw resistance",
+        "Noise reduction properties"
+      ],
+      "applications": {
+        "residential": [
+          "Hot and cold water supply networks",
+          "Underfloor heating distribution",
+          "Radiator and heating system connections",
+          "Bathroom and kitchen supply lines",
+          "Solar water heating circuits",
+          "Garden and landscape irrigation"
+        ],
+        "commercial": [
+          "Office complex water distribution",
+          "Hotel and hospitality plumbing systems",
+          "Restaurant and food service applications",
+          "Swimming pool and spa installations",
+          "HVAC chilled and hot water systems",
+          "Hospital and healthcare water systems"
+        ],
+        "industrial": [
+          "Process water distribution networks",
+          "Chemical transfer lines (compatible media)",
+          "Compressed air distribution systems",
+          "Industrial cooling water circuits",
+          "Food processing plant utilities",
+          "Pharmaceutical clean water systems"
+        ]
+      },
+      "industries": [
+        "Construction & Building",
+        "Hospitality & Tourism", 
+        "Healthcare & Medical",
+        "Educational Facilities",
+        "Manufacturing & Industrial",
+        "Oil & Gas (utilities)",
+        "Food & Beverage Processing",
+        "Pharmaceutical Manufacturing"
+      ],
+      "installationBenefits": [
+        "Rapid installation with fusion welding technology",
+        "No corrosion protection coatings required",
+        "Reduced system weight compared to metal alternatives",
+        "Lower transportation and handling costs",
+        "Excellent insulation reduces heat loss",
+        "No galvanic corrosion between joints",
+        "Flexibility allows for thermal expansion",
+        "Clean fusion joints eliminate leak points"
+      ],
+      "qualityAssurance": {
+        "testing": "Hydrostatic pressure testing, thermal cycling, and long-term stress testing per ISO 15874",
+        "warranty": "25-year performance warranty with certified installation",
+        "compliance": "Full compliance with international plumbing codes",
+        "traceability": "Laser marking with production data and batch codes",
+        "qualityControl": "Continuous quality monitoring and statistical process control"
+      },
+      "environmentalBenefits": [
+        "100% recyclable polypropylene material",
+        "Energy efficient production process",
+        "Reduced energy loss in hot water systems",
+        "No toxic leaching into water supply",
+        "Lower environmental impact than metal pipes",
+        "Supports green building certifications"
+      ]
+    },
+  
+    "upvc-pipes": {
+      "enhancedDescription": "Lightweight, corrosion-resistant UPVC pipes engineered for efficient fluid conveyance in drainage, sewage, irrigation, and industrial applications. Optimal solution for underground and above-ground installations requiring chemical resistance and long-term durability.",
+      "technicalSpecs": {
+        "material": "Unplasticized Polyvinyl Chloride (UPVC)",
+        "temperatureRange": "0°C to +60°C (continuous service)",
+        "pressureRating": "PN 4, PN 6, PN 10, PN 16",
+        "sizeRange": "50mm to 315mm",
+        "length": "6m standard lengths (3m and 12m available)",
+        "wallThickness": "SN 2, SN 4, SN 8 for buried applications",
+        "connectionMethod": "Solvent cement welding, rubber ring joints",
+        "standards": ["ISO 4422", "BS EN 1401", "ASTM D1785", "ASTM D2665"],
+        "certifications": ["NSF 61", "CE Marking", "BSI Kitemark", "WRAS Approved"]
+      },
+      "keyFeatures": [
+        "Excellent chemical resistance to acids, alkalis, and salts",
+        "Lightweight construction for easy handling",
+        "Smooth bore for efficient flow and reduced friction",
+        "Long service life (50+ years underground)",
+        "UV resistant formulation for outdoor exposure",
+        "Easy installation with standard tools",
+        "Cost-effective solution for large diameter applications",
+        "Environmentally friendly and recyclable",
+        "High impact strength and durability",
+        "Resistant to biological attack and root penetration"
+      ],
+      "applications": {
+        "residential": [
+          "Residential drainage and sewage systems",
+          "Rainwater harvesting and collection",
+          "Garden irrigation networks",
+          "Swimming pool drainage and filtration",
+          "Basement drainage systems",
+          "Greywater recycling systems"
+        ],
+        "commercial": [
+          "Commercial building drainage systems",
+          "Industrial facility sewage networks",
+          "Storm water management systems",
+          "Irrigation for landscaping projects",
+          "Car wash and service station drainage",
+          "Food processing plant drainage"
+        ],
+        "industrial": [
+          "Chemical process drainage systems",
+          "Mining and mineral processing applications",
+          "Power plant cooling water systems",
+          "Wastewater treatment plant networks",
+          "Industrial effluent handling",
+          "Desalination plant piping"
+        ]
+      },
+      "industries": [
+        "Construction & Infrastructure",
+        "Municipal & Utilities",
+        "Agriculture & Irrigation",
+        "Chemical Processing",
+        "Mining & Minerals",
+        "Water Treatment",
+        "Manufacturing",
+        "Telecommunications (ducting)"
+      ],
+      "installationBenefits": [
+        "50% lighter than equivalent steel pipes",
+        "No heavy lifting equipment required",
+        "Rapid installation with solvent cement joining",
+        "No corrosion protection or cathodic protection needed",
+        "Excellent trench fill and backfill characteristics",
+        "Flexible routing around obstacles",
+        "Low maintenance throughout service life",
+        "No internal scaling or tuberculation"
+      ],
+      "qualityAssurance": {
+        "testing": "Pressure testing, impact resistance, and chemical compatibility testing per ISO standards",
+        "warranty": "20-year manufacturer warranty for buried applications",
+        "compliance": "Meets international drainage and pressure pipe standards",
+        "traceability": "Embossed marking with manufacturing details and standards compliance",
+        "qualityControl": "Statistical quality control with regular third-party verification"
+      },
+      "availableFittings": [
+        "Bends (90°, 45°, 22.5°, 11.25°)",
+        "Junctions and branches",
+        "Reducers and increasers",
+        "Couplers and repair couplers",
+        "End caps and plugs",
+        "Access chambers and inspection chambers",
+        "Adapters for different pipe materials",
+        "Flexible couplings",
+        "Saddle connections",
+        "Flap valves and non-return valves"
+      ],
+      "environmentalBenefits": [
+        "100% recyclable PVC material",
+        "Low energy manufacturing process",
+        "Reduced excavation requirements",
+        "No groundwater contamination risk",
+        "Long service life reduces replacement needs",
+        "Contributes to sustainable infrastructure development"
+      ]
+    },
+  
+    "upvc-fittings": {
+      "enhancedDescription": "Precision-molded UPVC fittings engineered to complete pipe networks with secure, reliable connections. Designed for optimal performance in drainage, sewage, and pressure applications with superior chemical resistance and dimensional accuracy.",
+      "technicalSpecs": {
+        "material": "Unplasticized Polyvinyl Chloride (UPVC)",
+        "temperatureRange": "0°C to +60°C (continuous service)",
+        "pressureRating": "PN 4, PN 6, PN 10, PN 16", 
+        "sizeRange": "50mm to 315mm",
+        "connectionType": "Solvent cement welding, rubber ring joint, threaded connections",
+        "wallThickness": "Minimum wall thickness per ISO requirements",
+        "jointDesign": "Spigot and socket, plain ended",
+        "standards": ["ISO 4422", "BS EN 1401", "ASTM D2665", "ASTM D3034"],
+        "certifications": ["CE Marking", "BSI Kitemark", "NSF 61", "WRAS Approved"]
+      },
+      "keyFeatures": [
+        "Precision molded for perfect dimensional accuracy",
+        "Chemical and corrosion resistance to aggressive media",
+        "Long-term reliability under varying load conditions",
+        "Easy solvent cement joining for permanent connections",
+        "Wide range of configurations for complex layouts",
+        "Cost-effective installation and lifecycle costs",
+        "Maintenance-free operation throughout service life",
+        "Recyclable material supporting circular economy",
+        "High impact strength and crush resistance",
+        "Smooth internal surfaces for optimal hydraulics"
+      ],
+      "applications": {
+        "residential": [
+          "Residential drainage and waste systems",
+          "Storm water collection networks",
+          "Irrigation system connections",
+          "Swimming pool and spa drainage",
+          "Basement and foundation drainage",
+          "Greywater and blackwater systems"
+        ],
+        "commercial": [
+          "Commercial building drainage networks",
+          "Industrial complex sewage systems",
+          "Municipal storm water infrastructure",
+          "Landscape irrigation installations",
+          "Car wash and service facility drainage",
+          "Food processing facility waste systems"
+        ],
+        "industrial": [
+          "Chemical plant drainage and waste handling",
+          "Mining operation water management",
+          "Power generation cooling systems",
+          "Wastewater treatment facility piping",
+          "Industrial process effluent systems",
+          "Desalination and water treatment plants"
+        ]
+      },
+      "industries": [
+        "Construction & Infrastructure",
+        "Municipal Water & Wastewater",
+        "Agriculture & Irrigation",
+        "Chemical & Petrochemical",
+        "Mining & Extraction",
+        "Water & Wastewater Treatment",
+        "Manufacturing & Processing",
+        "Telecommunications Infrastructure"
+      ],
+      "installationBenefits": [
+        "Lightweight design reduces handling and installation time",
+        "No special tools required beyond standard PVC welding equipment",
+        "Quick solvent cement bonding process",
+        "No corrosion protection measures needed",
+        "Excellent compatibility with existing UPVC systems",
+        "Flexible installation in confined spaces",
+        "Reduced excavation depth requirements",
+        "No ongoing maintenance or replacement schedules"
+      ],
+      "qualityAssurance": {
+        "testing": "Impact resistance, pressure testing, and dimensional verification per international standards",
+        "warranty": "20-year manufacturer warranty against material defects",
+        "compliance": "Full compliance with drainage and pressure pipe standards worldwide",
+        "traceability": "Embossed identification marks with batch and production data",
+        "qualityControl": "ISO 9001 certified manufacturing with continuous process monitoring"
+      },
+      "availableFittings": [
+        "Elbows and bends (90°, 45°, 22.5°, 11.25°)",
+        "Tees, junctions, and branches (equal and reducing)",
+        "Reducers, increasers, and adapters",
+        "Couplers, repair couplers, and slip couplings",
+        "End caps, plugs, and closures",
+        "Access fittings and inspection chambers",
+        "Transition adapters for different pipe materials",
+        "Flexible couplings and expansion joints",
+        "Saddle connections and tapping saddles",
+        "Valve connections and flanged adaptors"
+      ],
+      "environmentalBenefits": [
+        "100% recyclable PVC material composition",
+        "Energy efficient manufacturing process",
+        "Reduced transportation emissions due to lightweight",
+        "No toxic leaching or groundwater contamination",
+        "Extended service life minimizes replacement frequency",
+        "Supports sustainable construction practices",
+        "Lower carbon footprint compared to metal alternatives"
+      ]
+    },
+  
+    "upvc-pressure-pipes": {
+      "enhancedDescription": "High-performance pressure-rated UPVC pipes engineered for superior hydraulic efficiency and durability in pressurized water distribution, irrigation, and industrial fluid transport systems. Designed for exceptional burst strength and long-term pressure resistance.",
+      "technicalSpecs": {
+        "material": "Unplasticized Polyvinyl Chloride (UPVC) with pressure-grade formulation",
+        "temperatureRange": "0°C to +60°C (continuous service), short term +70°C",
+        "pressureRating": "PN 4, PN 6, PN 10, PN 16, PN 20, PN 25",
+        "sizeRange": "50mm to 315mm (larger sizes available on request)",
+        "length": "6m standard lengths (3m, 9m, 12m available)",
+        "wallThickness": "SDR 41, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11",
+        "connectionMethod": "Solvent cement welding, rubber ring joints, flanged connections",
+        "jointType": "Spigot and socket, plain ended, flanged",
+        "standards": ["ISO 4422", "BS EN 1452", "ASTM D1785", "ASTM D2241", "AWWA C900"],
+        "certifications": ["NSF 61", "CE Marking", "BSI Kitemark", "WRAS Approved", "UL Listed"]
+      },
+      "keyFeatures": [
+        "Superior pressure resistance and burst strength",
+        "Excellent hydraulic characteristics with C-factor of 150",
+        "Chemical and corrosion resistance to aggressive fluids",
+        "Low thermal conductivity minimizes condensation",
+        "Smooth internal surface prevents scaling and deposits",
+        "UV stabilized formulation for above-ground installations",
+        "Dimensional stability under pressure and thermal cycling",
+        "Easy installation with standard PVC joining methods",
+        "High impact strength and crack resistance",
+        "Excellent fatigue resistance under pressure cycling"
+      ],
+      "applications": {
+        "residential": [
+          "Residential water supply mains",
+          "Pressure irrigation systems for gardens",
+          "Swimming pool circulation systems",
+          "Pressure washing and cleaning systems",
+          "Fire sprinkler supply lines",
+          "Pressurized rainwater harvesting"
+        ],
+        "commercial": [
+          "Commercial building water mains",
+          "Fire protection and sprinkler systems",
+          "HVAC chilled water distribution",
+          "Cooling tower circulation systems",
+          "Process water supply for facilities",
+          "Pressure irrigation for landscapes"
+        ],
+        "industrial": [
+          "Industrial water supply networks",
+          "Chemical processing fluid transport",
+          "Cooling water circulation systems",
+          "Process utility distribution",
+          "Reverse osmosis and water treatment",
+          "Industrial fire protection systems"
+        ]
+      },
+      "industries": [
+        "Water Utilities & Distribution",
+        "Construction & Infrastructure",
+        "Agriculture & Irrigation",
+        "Chemical & Process Industries",
+        "Power Generation",
+        "Manufacturing & Industrial",
+        "Fire Protection Systems",
+        "Water Treatment & Desalination"
+      ],
+      "installationBenefits": [
+        "Lightweight design reduces installation complexity",
+        "Standard PVC joining techniques and equipment",
+        "No cathodic protection or corrosion control required",
+        "Excellent trench and bedding characteristics",
+        "Reduced pumping costs due to smooth bore",
+        "Lower system pressure requirements",
+        "Minimal thermal expansion compared to metal pipes",
+        "Long-term hydraulic performance maintenance"
+      ],
+      "qualityAssurance": {
+        "testing": "Hydrostatic pressure testing, long-term stress rupture testing, and impact resistance per ASTM and ISO standards",
+        "warranty": "25-year pressure performance warranty",
+        "compliance": "Meets water utility specifications and international pressure pipe standards",
+        "traceability": "Permanent pipe marking with pressure rating, size, and manufacturing data",
+        "qualityControl": "Third-party verified quality management system with continuous monitoring"
+      },
+      "availableFittings": [
+        "Pressure-rated elbows and bends",
+        "Pressure tees and reducing tees",
+        "Pressure reducers and adapters",
+        "Flanged fittings and adaptors",
+        "Ball valves and gate valves rated for system pressure",
+        "Pressure couplings and repair fittings",
+        "Thrust restraint fittings",
+        "Pressure-rated end caps",
+        "Tapping saddles and service connections",
+        "Expansion joints and flexible connections"
+      ],
+      "environmentalBenefits": [
+        "100% recyclable PVC material",
+        "Energy efficient hydraulic performance",
+        "Reduced water loss through leak-resistant joints",
+        "Lower carbon footprint in production and transport",
+        "No heavy metals or toxic compounds",
+        "Contributes to sustainable water infrastructure",
+        "Reduced maintenance and replacement requirements"
+      ],
+      "hydraulicPerformance": {
+        "hazenWilliamsC": "150 (maintains throughout service life)",
+        "flowVelocity": "Up to 5 m/s recommended for optimal performance",
+        "pressureLoss": "Minimal due to smooth internal surface",
+        "surgeResistance": "Excellent surge and water hammer resistance"
+      }
+    }
+  }

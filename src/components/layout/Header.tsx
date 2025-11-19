@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { Menu, X, Search, Phone, Mail } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -31,8 +33,8 @@ export const Header: React.FC = () => {
               </div>
             </div>
             <div className="hidden md:flex items-center space-x-4">
-              <Link 
-                to="/quote" 
+              <Link
+                href="/quote"
                 className="bg-decos-gold text-decos-charcoal px-4 py-1 rounded text-sm font-medium hover:bg-yellow-400 transition-colors"
               >
                 Get Quote
@@ -46,7 +48,7 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <div className="bg-decos-gold p-2 rounded-lg mr-3">
               <div className="w-8 h-8 bg-decos-charcoal rounded flex items-center justify-center">
                 <span className="text-decos-gold font-bold text-lg">D</span>
@@ -63,7 +65,7 @@ export const Header: React.FC = () => {
             {navigation.map((item) => (
               <Link
                 key={item.name}
-                to={item.href}
+                href={item.href}
                 className="text-decos-clean hover:text-decos-gold font-medium transition-colors duration-200 relative group"
               >
                 {item.name}
@@ -75,12 +77,12 @@ export const Header: React.FC = () => {
           {/* Search & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
             <Link
-              to="/search"
+              href="/search"
               className="p-2 text-decos-clean hover:text-decos-gold transition-colors"
             >
               <Search className="h-5 w-5" />
             </Link>
-            
+
             {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -105,7 +107,7 @@ export const Header: React.FC = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   className="block px-3 py-2 text-decos-clean hover:text-decos-gold hover:bg-decos-slate rounded-md font-medium transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -113,7 +115,7 @@ export const Header: React.FC = () => {
                 </Link>
               ))}
               <Link
-                to="/quote"
+                href="/quote"
                 className="block bg-decos-gold text-decos-charcoal px-3 py-2 rounded-md text-center font-medium hover:bg-yellow-400 transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
