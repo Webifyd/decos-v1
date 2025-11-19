@@ -1,56 +1,106 @@
+'use client';
+
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Container } from '@/components/layout/Container';
+import { Button } from '@/components/ui/Button';
+import { Input } from '@/components/ui/Input';
+import { Card, CardBody } from '@/components/ui/Card';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-decos-clean py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-decos-charcoal mb-8">
-          Contact Us
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-decos-slate mb-6">
-              Get in Touch
-            </h2>
-            <div className="space-y-4">
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-decos-gold mr-3 mt-1" />
-                <div>
-                  <p className="font-semibold text-decos-charcoal">Address</p>
-                  <p className="text-decos-gray">
-                    123 Industrial Avenue<br />
-                    Manufacturing District<br />
-                    City, State 12345
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <Phone className="h-5 w-5 text-decos-gold mr-3 mt-1" />
-                <div>
-                  <p className="font-semibold text-decos-charcoal">Phone</p>
-                  <p className="text-decos-gray">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <Mail className="h-5 w-5 text-decos-gold mr-3 mt-1" />
-                <div>
-                  <p className="font-semibold text-decos-charcoal">Email</p>
-                  <p className="text-decos-gray">info@decos.com</p>
+    <div className="min-h-screen bg-neutral-clean">
+      <section className="bg-industrial-slate text-white py-16">
+        <Container>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <p className="text-xl text-neutral-light max-w-2xl">
+            Have a question or need a quote? Our team is ready to assist you with your project requirements.
+          </p>
+        </Container>
+      </section>
+
+      <section className="py-16">
+        <Container>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <Card>
+                <CardBody>
+                  <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
+                  <form className="space-y-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Input label="First Name" placeholder="John" />
+                      <Input label="Last Name" placeholder="Doe" />
+                    </div>
+                    <Input label="Email Address" type="email" placeholder="john@example.com" />
+                    <Input label="Phone Number" type="tel" placeholder="+1 (555) 000-0000" />
+                    <Input label="Subject" placeholder="Product Inquiry" />
+
+                    <div>
+                      <label className="block text-sm font-medium text-neutral-charcoal mb-2">Message</label>
+                      <textarea
+                        className="block w-full px-4 py-3 rounded-md border-2 border-neutral-light bg-neutral-pure text-neutral-charcoal focus:outline-none focus:border-technical-blue focus:ring-2 focus:ring-technical-blue/20 min-h-[144px]"
+                        placeholder="Tell us about your project..."
+                      ></textarea>
+                    </div>
+
+                    <Button type="submit" size="lg" className="w-full">
+                      Send Message
+                    </Button>
+                  </form>
+                </CardBody>
+              </Card>
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
+                <p className="text-neutral-steel mb-8">
+                  We're here to help and answer any question you might have. We look forward to hearing from you.
+                </p>
+
+                <div className="space-y-6">
+                  <Card className="border-l-4 border-l-decos-gold">
+                    <CardBody className="flex items-start">
+                      <span className="text-2xl mr-4">📍</span>
+                      <div>
+                        <h3 className="font-bold text-lg mb-1">Headquarters</h3>
+                        <p className="text-neutral-steel">
+                          123 Industrial Park<br />
+                          Manufacturing City, MC 12345<br />
+                          United States
+                        </p>
+                      </div>
+                    </CardBody>
+                  </Card>
+
+                  <Card className="border-l-4 border-l-decos-gold">
+                    <CardBody className="flex items-start">
+                      <span className="text-2xl mr-4">📞</span>
+                      <div>
+                        <h3 className="font-bold text-lg mb-1">Phone</h3>
+                        <p className="text-neutral-steel mb-1">Main: +1 (234) 567-890</p>
+                        <p className="text-neutral-steel">Support: +1 (234) 567-899</p>
+                      </div>
+                    </CardBody>
+                  </Card>
+
+                  <Card className="border-l-4 border-l-decos-gold">
+                    <CardBody className="flex items-start">
+                      <span className="text-2xl mr-4">✉️</span>
+                      <div>
+                        <h3 className="font-bold text-lg mb-1">Email</h3>
+                        <p className="text-neutral-steel mb-1">Sales: sales@decos.com</p>
+                        <p className="text-neutral-steel">Support: support@decos.com</p>
+                      </div>
+                    </CardBody>
+                  </Card>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-decos-slate mb-6">
-              Send us a Message
-            </h2>
-            <p className="text-decos-gray mb-4">
-              Contact form coming soon. For now, please reach out via phone or email.
-            </p>
-          </div>
-        </div>
-      </div>
+        </Container>
+      </section>
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import { Inter } from 'next/font/google';
+import '../index.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Decos PVC Solutions - Quality Pipes & Fittings',
@@ -18,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className={`${inter.className} antialiased bg-neutral-clean text-neutral-charcoal`}>
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
