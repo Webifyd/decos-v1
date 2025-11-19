@@ -1,118 +1,83 @@
 import React from 'react';
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Image from 'next/image';
+import { Container } from './Container';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-decos-charcoal text-decos-clean">
-      {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+    <footer className="bg-neutral-charcoal text-neutral-light border-t border-neutral-steel/20">
+      <Container>
+        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {/* Brand Column */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <div className="bg-decos-gold p-2 rounded-lg mr-3">
-                <div className="w-8 h-8 bg-decos-charcoal rounded flex items-center justify-center">
-                  <span className="text-decos-gold font-bold text-lg">D</span>
-                </div>
-              </div>
-              <div>
-                <h2 className="text-xl font-bold text-decos-gold">DECOS</h2>
-                <p className="text-xs text-decos-gray">PVC Solutions</p>
-              </div>
+            <div className="relative h-8 w-24">
+              <Image
+                src="/assets/Decos_Logo.svg"
+                alt="Decos Logo"
+                fill
+                className="object-contain object-left opacity-90"
+              />
             </div>
-            <p className="text-decos-gray">
-              Leading manufacturer of high-quality PVC pipes and fittings for industrial and commercial applications. Trusted by professionals worldwide.
+            <p className="text-sm text-neutral-steel max-w-xs">
+              Connecting solutions, building tomorrow. Leading manufacturer of high-quality PVC pipes and fittings for industrial applications.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-decos-gray hover:text-decos-gold transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-decos-gray hover:text-decos-gold transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-decos-gray hover:text-decos-gold transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-decos-gray hover:text-decos-gold transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-decos-gold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link href="/" className="text-decos-gray hover:text-decos-gold transition-colors">Home</Link></li>
-              <li><Link href="/products" className="text-decos-gray hover:text-decos-gold transition-colors">Products</Link></li>
-              <li><Link href="/categories" className="text-decos-gray hover:text-decos-gold transition-colors">Categories</Link></li>
-              <li><Link href="/about" className="text-decos-gray hover:text-decos-gold transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-decos-gray hover:text-decos-gold transition-colors">Contact</Link></li>
-              <li><Link href="/quote" className="text-decos-gray hover:text-decos-gold transition-colors">Get Quote</Link></li>
+            <h3 className="text-neutral-clean font-semibold mb-4">Products</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/products/pipes" className="hover:text-decos-gold transition-colors">PVC Pipes</Link></li>
+              <li><Link href="/products/fittings" className="hover:text-decos-gold transition-colors">Fittings</Link></li>
+              <li><Link href="/products/industrial" className="hover:text-decos-gold transition-colors">Industrial Series</Link></li>
+              <li><Link href="/products/catalog" className="hover:text-decos-gold transition-colors">Download Catalog</Link></li>
             </ul>
           </div>
 
-          {/* Products */}
+          {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold text-decos-gold mb-4">Products</h3>
-            <ul className="space-y-2">
-              <li><Link href="/products?category=ppr-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">PPR Pipes</Link></li>
-              <li><Link href="/products?category=ppr-fittings" className="text-decos-gray hover:text-decos-gold transition-colors">PPR Fittings</Link></li>
-              <li><Link href="/products?category=upvc-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Pipes</Link></li>
-              <li><Link href="/products?category=upvc-fittings" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Fittings</Link></li>
-              <li><Link href="/products?category=upvc-pressure-pipes" className="text-decos-gray hover:text-decos-gold transition-colors">UPVC Pressure Pipes</Link></li>
+            <h3 className="text-neutral-clean font-semibold mb-4">Company</h3>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/about" className="hover:text-decos-gold transition-colors">About Us</Link></li>
+              <li><Link href="/sustainability" className="hover:text-decos-gold transition-colors">Sustainability</Link></li>
+              <li><Link href="/careers" className="hover:text-decos-gold transition-colors">Careers</Link></li>
+              <li><Link href="/contact" className="hover:text-decos-gold transition-colors">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold text-decos-gold mb-4">Contact Info</h3>
-            <div className="space-y-3">
-              <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-decos-gray mr-3 mt-0.5 flex-shrink-0" />
-                <p className="text-decos-gray">
-                  123 Industrial Avenue<br />
-                  Manufacturing District<br />
-                  City, State 12345
-                </p>
-              </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-decos-gray mr-3" />
-                <p className="text-decos-gray">+1 (555) 123-4567</p>
-              </div>
-              <div className="flex items-center">
-                <Mail className="h-5 w-5 text-decos-gray mr-3" />
-                <p className="text-decos-gray">info@decos.com</p>
-              </div>
-            </div>
+            <h3 className="text-neutral-clean font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2 text-sm text-neutral-steel">
+              <li className="flex items-start">
+                <span className="mr-2">📍</span>
+                <span>123 Industrial Park,<br />Manufacturing City, MC 12345</span>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">📞</span>
+                <a href="tel:+1234567890" className="hover:text-decos-gold transition-colors">+1 (234) 567-890</a>
+              </li>
+              <li className="flex items-center">
+                <span className="mr-2">✉️</span>
+                <a href="mailto:info@decos.com" className="hover:text-decos-gold transition-colors">info@decos.com</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Footer */}
-      <div className="border-t border-decos-slate">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-decos-gray text-sm">
-              © {currentYear} Decos PVC Solutions. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="/sitemap" className="text-decos-gray hover:text-decos-gold text-sm transition-colors">
-                Sitemap
-              </Link>
-            </div>
+        {/* Bottom Bar */}
+        <div className="py-6 border-t border-neutral-steel/20 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-steel">
+          <p>&copy; {currentYear} Decos Solutions. All rights reserved.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <Link href="/privacy" className="hover:text-decos-gold transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-decos-gold transition-colors">Terms of Service</Link>
+            <Link href="/sitemap" className="hover:text-decos-gold transition-colors">Sitemap</Link>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };
