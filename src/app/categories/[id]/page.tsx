@@ -2,11 +2,29 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft, CheckCircle } from 'lucide-react';
 import categoriesData from '@/data/categories.json';
+import type { Metadata } from 'next';
 
 interface PageProps {
   params: Promise<{
     id: string;
   }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const categoryData = (categoriesData as any)[id];
+  const categoryName = id.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  if (!categoryData) {
+    return {
+      title: 'Category Not Found - Decos',
+    };
+  }
+
+  return {
+    title: `${categoryName} - Decos PVC Solutions`,
+    description: categoryData.enhancedDescription || `Professional-grade ${categoryName} for residential, commercial, and industrial applications.`,
+  };
 }
 
 export default async function CategoryDetailPage({ params }: PageProps) {
@@ -21,11 +39,11 @@ export default async function CategoryDetailPage({ params }: PageProps) {
             Category Not Found
           </h1>
           <Link
-            href="/"
-            className="text-technical-blue hover:text-decos-gold inline-flex items-center"
+            href="/categories"
+            className="text-technical-blue hover:text-decos-gold inline-flex items-center min-h-[44px]"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Home
+            Back to Categories
           </Link>
         </div>
       </div>
@@ -36,18 +54,33 @@ export default async function CategoryDetailPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-neutral-clean">
+      {/* Hero Image Placeholder */}
+      <section className="bg-gradient-to-br from-decos-gold/20 via-technical-blue/20 to-industrial-slate/20 relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <div className="text-center">
+            <div className="text-8xl font-bold text-neutral-charcoal/10 mb-4">
+              {categoryName[0]}
+            </div>
+            <p className="text-neutral-steel text-lg">
+              {/* Image placeholder - category image will be provided later */}
+              Category Image Coming Soon
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Header */}
       <div className="bg-gradient-to-r from-industrial-slate to-neutral-charcoal text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
-            href="/"
-            className="text-decos-gold hover:text-yellow-400 inline-flex items-center mb-6"
+            href="/categories"
+            className="text-decos-gold hover:text-decos-gold-light inline-flex items-center mb-6 min-h-[44px]"
           >
             <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Home
+            Back to Categories
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{categoryName}</h1>
-          <p className="text-xl text-gray-200 max-w-3xl">
+          <p className="text-xl text-neutral-light max-w-3xl">
             {categoryData.enhancedDescription}
           </p>
         </div>
