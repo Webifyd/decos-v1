@@ -1,0 +1,25 @@
+
+> decos-pvc-website@1.0.0 build
+> next build
+
+   Γû▓ Next.js 16.0.3 (Turbopack)
+
+   Creating an optimized production build ...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+ Γ£ô Compiled successfully in 3.8s
+   Running TypeScript ...
+Failed to compile.
+
+./src/lib/neonClient.ts:4:36
+Type error: Property 'env' does not exist on type 'ImportMeta'.
+
+[0m [90m 2 |[39m
+ [90m 3 |[39m [90m// Neon Data API URL from environment variables[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mconst[39m neonDataApiUrl [33m=[39m [36mimport[39m[33m.[39mmeta[33m.[39menv[33m.[39m[33mVITE_NEON_DATA_API_URL[39m[33m;[39m
+ [90m   |[39m                                    [31m[1m^[22m[39m
+ [90m 5 |[39m [36mconst[39m neonAuthToken [33m=[39m [36mimport[39m[33m.[39mmeta[33m.[39menv[33m.[39m[33mVITE_NEON_AUTH_TOKEN[39m[33m;[39m
+ [90m 6 |[39m
+ [90m 7 |[39m [36mif[39m ([33m![39mneonDataApiUrl) {[0m
+Next.js build worker exited with code: 1 and signal: null
