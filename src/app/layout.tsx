@@ -3,14 +3,15 @@ import { Inter } from 'next/font/google';
 import '../index.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { COMPANY_INFO, SEO } from '@/lib/constants';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Decos PVC Solutions - Quality Pipes & Fittings',
-  description: 'Leading manufacturer of high-quality PVC pipes and fittings for industrial and commercial applications.',
+  title: `${SEO.defaultTitle} - Quality Pipes & Fittings`,
+  description: COMPANY_INFO.description,
   appleWebApp: {
-    title: 'Decos',
+    title: COMPANY_INFO.name,
   },
 };
 

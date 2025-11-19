@@ -5,6 +5,7 @@ import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Card, CardBody } from '@/components/ui/Card';
+import { COMPANY_INFO } from '@/lib/constants';
 
 export default function ContactPage() {
   return (
@@ -64,11 +65,11 @@ export default function ContactPage() {
                     <CardBody className="flex items-start">
                       <span className="text-2xl mr-4">📍</span>
                       <div>
-                        <h3 className="font-bold text-lg mb-1">Headquarters</h3>
+                        <h3 className="font-bold text-lg mb-1">Location</h3>
                         <p className="text-neutral-steel">
-                          123 Industrial Park<br />
-                          Manufacturing City, MC 12345<br />
-                          United States
+                          {COMPANY_INFO.address.street}, {COMPANY_INFO.address.area}<br />
+                          {COMPANY_INFO.address.city}<br />
+                          {COMPANY_INFO.address.country}
                         </p>
                       </div>
                     </CardBody>
@@ -79,8 +80,9 @@ export default function ContactPage() {
                       <span className="text-2xl mr-4">📞</span>
                       <div>
                         <h3 className="font-bold text-lg mb-1">Phone</h3>
-                        <p className="text-neutral-steel mb-1">Main: +1 (234) 567-890</p>
-                        <p className="text-neutral-steel">Support: +1 (234) 567-899</p>
+                        <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="text-neutral-steel hover:text-decos-gold transition-colors">
+                          {COMPANY_INFO.phone}
+                        </a>
                       </div>
                     </CardBody>
                   </Card>
@@ -90,8 +92,9 @@ export default function ContactPage() {
                       <span className="text-2xl mr-4">✉️</span>
                       <div>
                         <h3 className="font-bold text-lg mb-1">Email</h3>
-                        <p className="text-neutral-steel mb-1">Sales: sales@decos.com</p>
-                        <p className="text-neutral-steel">Support: support@decos.com</p>
+                        <a href={`mailto:${COMPANY_INFO.email}`} className="text-neutral-steel hover:text-decos-gold transition-colors">
+                          {COMPANY_INFO.email}
+                        </a>
                       </div>
                     </CardBody>
                   </Card>

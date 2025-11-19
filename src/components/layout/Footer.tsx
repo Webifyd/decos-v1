@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from './Container';
+import { COMPANY_INFO } from '@/lib/constants';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,13 +17,13 @@ export const Footer = () => {
             <div className="relative h-8 w-24">
               <Image
                 src="/assets/Decos_Logo.svg"
-                alt="Decos Logo"
+                alt={`${COMPANY_INFO.name} Logo`}
                 fill
                 className="object-contain object-left opacity-90"
               />
             </div>
             <p className="text-sm text-neutral-steel max-w-xs">
-              Connecting solutions, building tomorrow. Leading manufacturer of high-quality PVC pipes and fittings for industrial applications.
+              {COMPANY_INFO.description}
             </p>
           </div>
 
@@ -55,15 +56,15 @@ export const Footer = () => {
             <ul className="space-y-2 text-sm text-neutral-steel">
               <li className="flex items-start">
                 <span className="mr-2">📍</span>
-                <span>123 Industrial Park,<br />Manufacturing City, MC 12345</span>
+                <span>{COMPANY_INFO.location}</span>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">📞</span>
-                <a href="tel:+1234567890" className="hover:text-decos-gold transition-colors">+1 (234) 567-890</a>
+                <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="hover:text-decos-gold transition-colors">{COMPANY_INFO.phone}</a>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✉️</span>
-                <a href="mailto:info@decos.com" className="hover:text-decos-gold transition-colors">info@decos.com</a>
+                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-decos-gold transition-colors">{COMPANY_INFO.email}</a>
               </li>
             </ul>
           </div>
@@ -71,7 +72,7 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t border-neutral-steel/20 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-steel">
-          <p>&copy; {currentYear} Decos Solutions. All rights reserved.</p>
+          <p>&copy; {currentYear} {COMPANY_INFO.fullName}. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-decos-gold transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-decos-gold transition-colors">Terms of Service</Link>
