@@ -10,8 +10,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: 'Products', href: '/products' },
-    { name: 'Solutions', href: '/solutions' },
+    { name: 'Categories', href: '/categories' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -51,9 +50,11 @@ export const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center">
-            <Button variant="primary">
-              Get a Quote
-            </Button>
+            <Link href="/contact">
+              <Button variant="primary">
+                Get a Quote
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -95,9 +96,11 @@ export const Header = () => {
                 </Link>
               ))}
               <div className="pt-4 pb-2">
-                <Button variant="primary" className="w-full">
-                  Get a Quote
-                </Button>
+                <Link href="/contact">
+                  <Button variant="primary" className="w-full">
+                    Get a Quote
+                  </Button>
+                </Link>
               </div>
             </div>
           </Container>

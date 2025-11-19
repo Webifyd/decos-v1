@@ -26,14 +26,15 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Categories */}
           <div>
-            <h3 className="text-neutral-clean font-semibold mb-4">Products</h3>
+            <h3 className="text-neutral-clean font-semibold mb-4">Categories</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/products/pipes" className="hover:text-decos-gold transition-colors">PVC Pipes</Link></li>
-              <li><Link href="/products/fittings" className="hover:text-decos-gold transition-colors">Fittings</Link></li>
-              <li><Link href="/products/industrial" className="hover:text-decos-gold transition-colors">Industrial Series</Link></li>
-              <li><Link href="/products/catalog" className="hover:text-decos-gold transition-colors">Download Catalog</Link></li>
+              <li><Link href="/categories/ppr-fittings" className="hover:text-decos-gold transition-colors">PPR Fittings</Link></li>
+              <li><Link href="/categories/ppr-pipes" className="hover:text-decos-gold transition-colors">PPR Pipes</Link></li>
+              <li><Link href="/categories/upvc-pipes" className="hover:text-decos-gold transition-colors">UPVC Pipes</Link></li>
+              <li><Link href="/categories/upvc-fittings" className="hover:text-decos-gold transition-colors">UPVC Fittings</Link></li>
+              <li><Link href="/categories/upvc-pressure-pipes" className="hover:text-decos-gold transition-colors">UPVC Pressure Pipes</Link></li>
             </ul>
           </div>
 
